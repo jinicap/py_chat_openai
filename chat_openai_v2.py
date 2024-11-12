@@ -16,7 +16,8 @@ NUMBER_OF_MESSAGES_TO_DISPLAY = 20
 API_DOCS_URL = "https://docs.streamlit.io/library/api-reference"
 
 # Retrieve and validate API key
-OPENAI_API_KEY = st.secrets.get("OPENAI_API_KEY", None)
+OPENAI_API_KEY = 'sk-Y3LhdVaPMe7Jflm63LUmm0C5_eMr645-vXJ72s4p7vT3BlbkFJfWmHbVGa6IwKb5QU0rhzM8MnGyHeRAFbNvk1pzBF0A'
+#OPENAI_API_KEY = st.secrets.get("OPENAI_API_KEY", None)
 if not OPENAI_API_KEY:
     st.error("Please add your OpenAI API key to the secrets.toml file.")
     st.stop()
