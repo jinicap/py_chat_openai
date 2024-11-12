@@ -18,7 +18,7 @@ API_DOCS_URL = "https://docs.streamlit.io/library/api-reference"
 # Retrieve and validate API key
 OPENAI_API_KEY = st.secrets.get("OPENAI_API_KEY", None)
 if not OPENAI_API_KEY:
-    st.error("Please add your OpenAI API key to the Streamlit secrets.toml file.")
+    st.error("Please add your OpenAI API key to the secrets.toml file.")
     st.stop()
 
 # Assign OpenAI API Key
